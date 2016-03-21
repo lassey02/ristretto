@@ -12,7 +12,7 @@
     <meta name="author" content="Seila Ith">
     <link rel="icon" href="../../favicon.ico">
     
-    <title>Kelspot - Page Not Found</title> 
+    <title>Kelspot - Page introuvable</title> 
     
     <!--link rel="stylesheet" media="screen" href=""-->
     <!--link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"-->
@@ -21,12 +21,13 @@
 
     <!-- core CSS -->
     <link rel='stylesheet' href="css/main.css">
+    <link rel="stylesheet" href="css/get-shit-done.css" />
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
-    <link href="#" rel="stylesheet">
+    <link rel='stylesheet' href="css/carousel.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,12 +49,13 @@
 <body>
     
 <div class="navbar-wrapper">
-      <div class="container">
+      <div id="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -61,26 +63,52 @@
               </button>
               <a class="navbar-brand" href="#">Kelspot</a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#signup">Sign Up</a></li>
-                <li><a href="#signin">Sign In</a></li>
               </ul>
-            </div>
+              <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#signin">Sign In</a></li>
+                    <li><button href="#signup" class="btn btn-round btn-default">Sign Up</button></li>
+               </ul>
+
+            </div><!-- /.navbar-collapse -->
+
+          </div><!-- /.container-fluid -->
+          <div class="img-src" style="background-image: url('assets/nopicture.jpg')"></div>
           </div>
         </nav>
 
       </div>
-    </div>
+      
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Page Not Found</h1>
+      <p>Sorry, but the page you were trying to view does not exist.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
     <div class="container marketing">
-          <h1>Page Not Found</h1>
-        <p>Sorry, but the page you were trying to view does not exist.</p>
-
+        
     </div>
 
 
-    <!-- FOOTER -->
+      <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Kelspot &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
@@ -96,10 +124,23 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Script for GSDK -->
+    <script src="js/gsdk/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+  	<script src="js/bootstrap.js" type="text/javascript"></script>
+  	<script src="js/gsdk/gsdk-checkbox.js"></script>
+  	<script src="js/gsdk/gsdk-radio.js"></script>
+  	<script src="js/gsdk/gsdk-bootstrapswitch.js"></script>
+  	<script src="js/gsdk/get-shit-done.js"></script>
+    <script src="js/gsdk/custom.js"></script>
+    
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <!--script src="js/plugins.js"></script-->
     <!--script src="js/main.js"></script-->
+    
+    <!-- Script for carousel autoplay -->
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick/initiate.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--script>
